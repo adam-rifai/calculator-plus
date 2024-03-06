@@ -18,7 +18,7 @@ function delete_last_element() {
 }
 
 function copy_content() {
-  let input = document.getElementById("display");
-  input.select(); // Select the text inside the input element
-  document.execCommand("copy"); // Copy the selected text to the clipboard
+  displayEl.select();
+  displayEl.setSelectionRange(0, 9999);
+  navigator.clipboard.writeText(displayEl.value);
 }

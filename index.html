@@ -12,23 +12,23 @@
   <div class="calculator" id="calculator">
     <input type="text" class="display" id="display" readonly>
     <div class="keys">
-      <button onclick="display_content('+')">+</button>
-      <button onclick="display_content('-')">-</button>
-      <button onclick="display_content('*')">*</button>
-      <button onclick="display_content('/')">/</button>
+      <button onclick="display_content('+')" class="operator">+</button>
+      <button onclick="display_content('-')" class="operator">-</button>
+      <button onclick="display_content('*')" class="operator">*</button>
+      <button onclick="display_content('/')" class="operator">/</button>
       <button onclick="display_content('6')">6</button>
       <button onclick="display_content('7')">7</button>
       <button onclick="display_content('8')">8</button>
       <button onclick="display_content('9')">9</button>
-      <button onclick="display_content('5')">5</button>
-      <button onclick="display_content('4')">4</button>
-      <button onclick="display_content('3')">3</button>
       <button onclick="display_content('2')">2</button>
+      <button onclick="display_content('3')">3</button>
+      <button onclick="display_content('4')">4</button>
+      <button onclick="display_content('5')">5</button>
       <button onclick="display_content('1')">1</button>
       <button onclick="display_content('0')">0</button>
       <button onclick="display_content('.')">.</button>
-      <button onclick="calculate()" class="calculate" id="calculate">=</button>
-      <button onclick="clear_content()" id="clear">C</button>
+      <button onclick="calculate()" class="calculate operator" id="calculate">=</button>
+      <button onclick="clear_content()" id="clear" class="operator">C</button>
       <button class="delete" onclick="delete_last_element()">⌫</button>
       <button onclick="copy_content()" id="copy">⎘</button>
 
